@@ -29,7 +29,7 @@
             <td>{{ driver.first_name }} {{ driver.last_name }}</td>
             <td>{{ driver.license_number }}</td>
             <td>
-              <a href="{% url 'taxi:driver-license-update' driver.pk %}" class="btn btn-secondary btn-sm">Update license</a>
+              <a href="{% url 'taxi:driver-update' driver.pk %}" class="btn btn-secondary btn-sm">Update license</a>
               <a href="{% url 'taxi:driver-delete' driver.pk %}" class="btn btn-danger btn-sm">Delete</a>
             </td>
           </tr>
